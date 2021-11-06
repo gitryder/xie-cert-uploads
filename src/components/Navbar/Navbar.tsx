@@ -8,6 +8,7 @@ const StyledNav = styled.nav`
   min-width: 100vw;
   background-color: white;
   padding-left: 64px;
+  font-family: ${theme.fonts.primary};
 
   p {
     font-size: 20px;
