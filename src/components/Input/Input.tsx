@@ -1,6 +1,7 @@
 import React from "react";
 import styled, { css } from "styled-components";
 import theme from "../../theme";
+import Icon from "../Icon/Icon";
 import { Stack } from "../Stack/Stack";
 
 const StyledInputTitle = styled.p(
@@ -51,7 +52,12 @@ const Input = ({ title, info }: InputProps): JSX.Element => {
   return (
     <Stack direction="column" spacing={-2}>
       <StyledInputTitle>{title}</StyledInputTitle>
-      {info && <StyledInputInfo>{info}</StyledInputInfo>}
+      {info && (
+        <Stack direction="row" spacing={4} align="center">
+          <Icon name="info" color="grey-0" size="extra-small" />
+          <StyledInputInfo>{info}</StyledInputInfo>
+        </Stack>
+      )}
       <StyledInputField></StyledInputField>
     </Stack>
   );
