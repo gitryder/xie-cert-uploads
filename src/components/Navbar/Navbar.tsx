@@ -3,6 +3,8 @@ import styled from "styled-components";
 import theme from "../../theme";
 
 const StyledNav = styled.nav`
+  display: flex;
+  align-items: center;
   min-width: 100vw;
   background-color: white;
   padding-left: 64px;
