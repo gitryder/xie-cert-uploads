@@ -20,6 +20,7 @@ const StyledInputInfo = styled.p`
   font-weight: ${theme.fontWeights.bold};
   color: ${theme.colors["grey-0"]};
   font-size: 12px;
+  margin-top: 0;
 `;
 
 const StyledInputField = styled.input(
@@ -53,7 +54,7 @@ const Input = ({ title, info }: InputProps): JSX.Element => {
     <Stack direction="column" spacing={-2}>
       <StyledInputTitle>{title}</StyledInputTitle>
       {info && (
-        <Stack direction="row" spacing={4} align="center">
+        <Stack direction="row" spacing={8}>
           <Icon name="info" color="grey-0" size="extra-small" />
           <StyledInputInfo>{info}</StyledInputInfo>
         </Stack>
