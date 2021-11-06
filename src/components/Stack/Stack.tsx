@@ -34,7 +34,7 @@ const StyledStack = styled.div<StyledStackProps>(
 
     ${direction === "column" &&
     css`
-      & > *:not(first-child) {
+      & > * {
         margin-top: ${spacing}px;
       }
     `}
