@@ -27,7 +27,7 @@ const StyledStack = styled.div<StyledStackProps>(
 
     ${direction === "row" &&
     css`
-      & > *:not(first-child) {
+      & > *:not(:first-child) {
         margin-left: ${spacing}px;
       }
     `}
