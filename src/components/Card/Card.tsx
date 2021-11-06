@@ -13,6 +13,7 @@ const StyledCard = styled.div<StyledCardProps>(
   ({ backgroundColor }) => css`
     background-color: ${backgroundColor ? colors[backgroundColor] : "white"};
     border-radius: 8px;
+    padding: 22px;
   `
 );
 
