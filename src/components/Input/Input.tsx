@@ -26,7 +26,7 @@ const StyledInputField = styled.input(
     border-style: solid;
     border-radius: 8px;
     border-width: 2px;
-    min-width: 350px;
+    min-width: 400px;
     padding: 12px;
     box-sizing: border-box;
     border-color: ${theme.colors["grey-1"]};
