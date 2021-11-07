@@ -37,6 +37,10 @@ const StyledInputField = styled.input(
     font-size: 18px;
     color: ${theme.colors["grey-2"]};
 
+    &[type="file"]::file-selector-button {
+      display: none;
+    }
+
     &:focus {
       outline: none;
       border-color: ${theme.colors["blue-2"]};
