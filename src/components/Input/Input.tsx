@@ -53,9 +53,16 @@ interface InputProps {
   type?: React.HTMLInputTypeAttribute;
   placeholder?: string;
   info?: string;
+  required?: boolean;
 }
 
-const Input = ({ title, type, placeholder, info }: InputProps): JSX.Element => {
+const Input = ({
+  title,
+  type,
+  placeholder,
+  info,
+  required,
+}: InputProps): JSX.Element => {
   return (
     <Stack direction="column" spacing={-2}>
       <StyledInputTitle>{title}</StyledInputTitle>
@@ -70,6 +77,7 @@ const Input = ({ title, type, placeholder, info }: InputProps): JSX.Element => {
         placeholder={placeholder}
         spellCheck={false}
         autoComplete="off"
+        required={required}
       ></StyledInputField>
     </Stack>
   );
