@@ -9,6 +9,7 @@ interface ContainerProps {
 const StyledContainer = styled.div(
   () => css`
     font-family: ${theme.fonts.primary};
+    margin: 18px;
     display: grid;
     justify-content: center;
     align-items: center;
