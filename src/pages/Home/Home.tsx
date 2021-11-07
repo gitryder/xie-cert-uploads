@@ -11,13 +11,15 @@ const Home = (): JSX.Element => {
       <Navbar title="Let's get your document"></Navbar>
       <Container>
         <Card>
-          <Input title="Your name" />
+          <Input title="Your name" placeholder="Eg. John Doe" />
           <Input
             title="Your XIE ID"
+            placeholder="Eg. 2021012000"
             info="This will be your username. Make sure you type it correctly."
           />
           <Input
             title="Doc. details"
+            placeholder="Eg. Transmission 2021 Participation"
             info="What's this doc. about? Try to keep it short."
           />
           <Input title="Document" />
