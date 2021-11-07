@@ -46,10 +46,11 @@ const StyledInputField = styled.input(
 
 interface InputProps {
   title: string;
+  placeholder?: string;
   info?: string;
 }
 
-const Input = ({ title, info }: InputProps): JSX.Element => {
+const Input = ({ title, placeholder, info }: InputProps): JSX.Element => {
   return (
     <Stack direction="column" spacing={-2}>
       <StyledInputTitle>{title}</StyledInputTitle>
@@ -60,6 +61,7 @@ const Input = ({ title, info }: InputProps): JSX.Element => {
         </Stack>
       )}
       <StyledInputField
+        placeholder={placeholder}
         spellCheck={false}
         autoComplete="off"
       ></StyledInputField>
