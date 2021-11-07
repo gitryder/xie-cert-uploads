@@ -15,6 +15,7 @@ const StyledButton = styled.button`
   outline: none;
   border: none;
   border-radius: 12px;
+  cursor: pointer;
 
   &:active {
     transform: scale(0.98);
