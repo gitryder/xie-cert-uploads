@@ -59,7 +59,10 @@ const Input = ({ title, info }: InputProps): JSX.Element => {
           <StyledInputInfo>{info}</StyledInputInfo>
         </Stack>
       )}
-      <StyledInputField></StyledInputField>
+      <StyledInputField
+        spellCheck={false}
+        autoComplete="off"
+      ></StyledInputField>
     </Stack>
   );
 };
