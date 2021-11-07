@@ -22,7 +22,7 @@ const Home = (): JSX.Element => {
             placeholder="Eg. Transmission 2021 Participation"
             info="What's this doc. about? Try to keep it short."
           />
-          <Input title="Document" />
+          <Input title="Document" type="file" />
         </Card>
         <Button>Yes, Upload it!</Button>
       </Container>
