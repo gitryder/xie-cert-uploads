@@ -58,6 +58,7 @@ interface InputProps {
   placeholder?: string;
   info?: string;
   required?: boolean;
+  onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
 const Input = ({
@@ -66,6 +67,7 @@ const Input = ({
   placeholder,
   info,
   required,
+  onChange,
 }: InputProps): JSX.Element => {
   return (
     <Stack direction="column" spacing={-2}>
@@ -82,6 +84,7 @@ const Input = ({
         spellCheck={false}
         autoComplete="off"
         required={required}
+        onChange={onChange}
       ></StyledInputField>
     </Stack>
   );
