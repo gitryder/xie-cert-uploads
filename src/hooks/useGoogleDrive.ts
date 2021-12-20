@@ -13,12 +13,12 @@ import { google } from "googleapis";
  * @reference https://developers.google.com/workspace/guides/create-project
  */
 const CLIENT_ID =
-  "550524347308-r3uptpg9ci1qt9b6nk15itllhnngui4u.apps.googleusercontent.com";
-const CLIENT_SECRET = "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";
+  "";
+const CLIENT_SECRET = "";
 const REFRESH_TOKEN =
-  "1//04Ke2kxnfBHHzCgYIARAAGAQSNwF-L9IrRSEAiTQo6CvIQZNV69cKBRdCjsRW1CS10eCMrpQ0kiBpR67v5ptT_Ila98ZADyotmP8";
+  "";
 
-const REDIRECT_URI = "https://developer.google.com/oauthplayground";
+const REDIRECT_URI = "";
 
 const oAuthClient = new google.auth.OAuth2(
   CLIENT_ID,
